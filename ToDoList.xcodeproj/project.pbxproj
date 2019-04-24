@@ -10,8 +10,8 @@
 		EAFD0858226FC0DE00B4F6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD0857226FC0DE00B4F6E2 /* AppDelegate.swift */; };
 		EAFD085A226FC0DE00B4F6E2 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD0859226FC0DE00B4F6E2 /* ToDoListViewController.swift */; };
 		EAFD085D226FC0DE00B4F6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD085B226FC0DE00B4F6E2 /* Main.storyboard */; };
-		EAFD085F226FC0EB00B4F6E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFD085E226FC0EB00B4F6E2 /* Assets.xcassets */; };
 		EAFD0862226FC0EB00B4F6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD0860226FC0EB00B4F6E2 /* LaunchScreen.storyboard */; };
+		EAFD086A226FDC0100B4F6E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFD0869226FDC0100B4F6E2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +19,9 @@
 		EAFD0857226FC0DE00B4F6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFD0859226FC0DE00B4F6E2 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		EAFD085C226FC0DE00B4F6E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EAFD085E226FC0EB00B4F6E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFD0861226FC0EB00B4F6E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFD0863226FC0EB00B4F6E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFD0869226FDC0100B4F6E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 				EAFD0857226FC0DE00B4F6E2 /* AppDelegate.swift */,
 				EAFD0859226FC0DE00B4F6E2 /* ToDoListViewController.swift */,
 				EAFD085B226FC0DE00B4F6E2 /* Main.storyboard */,
-				EAFD085E226FC0EB00B4F6E2 /* Assets.xcassets */,
+				EAFD0869226FDC0100B4F6E2 /* Assets.xcassets */,
 				EAFD0860226FC0EB00B4F6E2 /* LaunchScreen.storyboard */,
 				EAFD0863226FC0EB00B4F6E2 /* Info.plist */,
 			);
@@ -123,7 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFD0862226FC0EB00B4F6E2 /* LaunchScreen.storyboard in Resources */,
-				EAFD085F226FC0EB00B4F6E2 /* Assets.xcassets in Resources */,
+				EAFD086A226FDC0100B4F6E2 /* Assets.xcassets in Resources */,
 				EAFD085D226FC0DE00B4F6E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,17 +282,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J6X3XZMN7;
+				DEVELOPMENT_TEAM = GR96U552J8;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marekgarczewski.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marekgarczewski1213.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,17 +302,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J6X3XZMN7;
+				DEVELOPMENT_TEAM = GR96U552J8;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marekgarczewski.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marekgarczewski1213.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
