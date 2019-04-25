@@ -30,8 +30,16 @@ class CategoryViewController: UITableViewController {
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        performSegue(withIdentifier: "goToItems", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
+        let destinationVC = segue.destination as! ToDoListViewController
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedCategory = categoriesArray[indexPath.row]
+        }
     }
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
@@ -67,7 +75,7 @@ class CategoryViewController: UITableViewController {
     func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
         
         do {
-        categoriesArray = try context.fetch(request)
+            categoriesArray = try context.fetch(request)
         }
         catch {
             print("Error with loading categories: \(error)")
