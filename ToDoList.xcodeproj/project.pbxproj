@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EABF4B8F2270E12D001A218F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EABF4B8D2270E12D001A218F /* DataModel.xcdatamodeld */; };
+		EA7139372273BBFC008F5A37 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7139352273BBF9008F5A37 /* RealmSwift.framework */; };
+		EA7139382273BBFC008F5A37 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA7139352273BBF9008F5A37 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA7139392273BBFC008F5A37 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7139362273BBFB008F5A37 /* Realm.framework */; };
+		EA71393A2273BBFC008F5A37 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA7139362273BBFB008F5A37 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA71393E2273BD38008F5A37 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA71393D2273BD38008F5A37 /* Item.swift */; };
+		EA7139402273BDC5008F5A37 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA71393F2273BDC5008F5A37 /* Category.swift */; };
 		EABF4BB42271091E001A218F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABF4BB32271091E001A218F /* CategoryViewController.swift */; };
 		EAFD0858226FC0DE00B4F6E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD0857226FC0DE00B4F6E2 /* AppDelegate.swift */; };
 		EAFD085A226FC0DE00B4F6E2 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD0859226FC0DE00B4F6E2 /* ToDoListViewController.swift */; };
@@ -15,9 +20,27 @@
 		EAFD0862226FC0EB00B4F6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFD0860226FC0EB00B4F6E2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA71393B2273BBFC008F5A37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA71393A2273BBFC008F5A37 /* Realm.framework in Embed Frameworks */,
+				EA7139382273BBFC008F5A37 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EA7139352273BBF9008F5A37 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		EA7139362273BBFB008F5A37 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		EA71393D2273BD38008F5A37 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EA71393F2273BDC5008F5A37 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		EABF4B892270CA90001A218F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EABF4B8E2270E12D001A218F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		EABF4BB32271091E001A218F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		EAFD0854226FC0DE00B4F6E2 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFD0857226FC0DE00B4F6E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7139392273BBFC008F5A37 /* Realm.framework in Frameworks */,
+				EA7139372273BBFC008F5A37 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +66,8 @@
 		EABF4B862270CA6C001A218F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EABF4B8D2270E12D001A218F /* DataModel.xcdatamodeld */,
+				EA71393D2273BD38008F5A37 /* Item.swift */,
+				EA71393F2273BDC5008F5A37 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -75,6 +101,8 @@
 		EAFD084B226FC0DE00B4F6E2 = {
 			isa = PBXGroup;
 			children = (
+				EA7139362273BBFB008F5A37 /* Realm.framework */,
+				EA7139352273BBF9008F5A37 /* RealmSwift.framework */,
 				EAFD0856226FC0DE00B4F6E2 /* ToDoList */,
 				EAFD0855226FC0DE00B4F6E2 /* Products */,
 			);
@@ -111,6 +139,8 @@
 				EAFD0850226FC0DE00B4F6E2 /* Sources */,
 				EAFD0851226FC0DE00B4F6E2 /* Frameworks */,
 				EAFD0852226FC0DE00B4F6E2 /* Resources */,
+				EA71393B2273BBFC008F5A37 /* Embed Frameworks */,
+				EA71393C2273BC24008F5A37 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -166,13 +196,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EA71393C2273BC24008F5A37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAFD0850226FC0DE00B4F6E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA71393E2273BD38008F5A37 /* Item.swift in Sources */,
+				EA7139402273BDC5008F5A37 /* Category.swift in Sources */,
 				EABF4BB42271091E001A218F /* CategoryViewController.swift in Sources */,
-				EABF4B8F2270E12D001A218F /* DataModel.xcdatamodeld in Sources */,
 				EAFD085A226FC0DE00B4F6E2 /* ToDoListViewController.swift in Sources */,
 				EAFD0858226FC0DE00B4F6E2 /* AppDelegate.swift in Sources */,
 			);
@@ -323,6 +374,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GR96U552J8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,6 +398,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GR96U552J8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,19 +437,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EABF4B8D2270E12D001A218F /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EABF4B8E2270E12D001A218F /* DataModel.xcdatamodel */,
-			);
-			currentVersion = EABF4B8E2270E12D001A218F /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EAFD084C226FC0DE00B4F6E2 /* Project object */;
 }
